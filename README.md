@@ -10,8 +10,6 @@ Then you can test if the visualization is properly working.
 ## MySQL workbench Setting
 When setting up a MySQL workbench, you need to check the host, port, user, password and dbname.
 
-<img width="1906" height="748" alt="image" src="https://github.com/user-attachments/assets/8a1b2b49-3301-4235-a231-db56995df82c" />
-
 ## R Setting
 First, Inside the world_country_boxplot.R file, change the dbname, host, port, user, password of con variable according to your setting. Then you can run the Project and see how the boxplot is shown while changing the choice of the input of Shiny layout.
 
