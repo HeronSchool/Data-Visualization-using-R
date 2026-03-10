@@ -6,11 +6,11 @@ library(plotly)
 # DB Connection
 con <- dbConnect(
   RMariaDB::MariaDB(),
-  dbname = "world",
-  host = "localhost",
-  port = 3306,
-  user = "root",
-  password = "000000"
+  dbname = Sys.getenv("DB_NAME"),
+  host = Sys.getenv("DB_HOST"),
+  port = as.numeric(Sys.getenv("DB_PORT")),
+  user = Sys.getenv("DB_USER"),
+  password = Sys.getenv("DB_PASSWORD")
 )
 
 ui <- fluidPage(
