@@ -48,6 +48,7 @@ https://dev.mysql.com/doc/world-setup/en/
 
 ```r
 install.packages(c("shiny","DBI","RMariaDB","ggplot2","plotly"))
+```
 
 2. Import the MySQL World Database.
 
@@ -57,7 +58,7 @@ host, user, password
 4. Run the application
 ```r
 shinyApp(ui = ui, server = server)
-
+```
 ### Project Structure
 project/
 ├── world_country_boxplot.R
